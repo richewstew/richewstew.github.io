@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+     <style>
+         /* Body and container styling */
+ .search-container {
+     position: relative; /* Ensure proper positioning */
+    z-index: 1000; /* Bring the search bar to the front */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+       width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure the input is above other elements */
+    position: relative;
+}
+         
+         body, html {
+            color: white; /* Set text color to white for all content */
+        }
+        
+ 
+        .category {
+            max-width: 800px; /* Set max width to avoid stretching */
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px; /* Add some space at the top */
+            margin-left: auto; /* Center the box horizontally */
+            margin-right: auto; /* Center the box horizontally */
+            z-index: 11;
+        }
+         
+         .h1pro {
+             color: white;
+             z-index: 12;
+             text-decoration: underline;
+             text-decoration-color: white;
+             
+         }         
+         
+         
+         
+         
+.item {
+    display: flex;
+    align-items: center; /* Vertically align the left and right sections */
+    margin-bottom: 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image and text horizontally */
+    justify-content: center;
+    margin-right: 30px; /* Space between left and right sections */
+}
+
+.left-image {
+    width: 325px; /* Make the left image larger */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and text */
+    z-index: 11;
+}
+
+.item-description {
+    font-size: 20px; /* Larger font for better visibility */
+    font-weight: bold;
+    text-align: center;
+    color: #fff; /* White text for contrast */
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align bullet points vertically */
+}
+
+.bullet-points {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    z-index: 11;
+    max-width: 125%;
+}
+
+.bullet-points li {
+    display: flex;
+    align-items: center;
+    margin: 5pxpx 0; /* Add spacing between bullet points */
+    font-size: 25px;
+    color: #fff; /* White text for visibility */
+}
+
+.bullet-points li img {
+    width: 60px; /* Match the size of the bullet point images */
+    height: auto;
+    margin-left: 10px; /* Add spacing between text and image */
+}
+         
+        
+         
+         
+    </style>
+</head>
+<body>
+    
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="spinner"></div>
+    </div> 
+     <div class="content">
+    
+ <div class="background"></div> <!-- Background image with blur -->
+    <div class="overlay"></div> <!-- Overlay for better readability -->
+    <header class="navbar">
+        <nav class="taskbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="#" class="dropdown-toggle">Values List</a></li>
+                <div class="dropdown-menu">
+                <li><a href="sticker.html">Sticker Value</a></li>
+                <li><a href="unwaxed.html" class="collapsible">Unwaxed</a></li>
+            
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <h1 class="h1pro">Waxed Beequip Value</h1>
+        
+         <div class="category">
+        <h2 style="text-align: center;"></h2>
+             
+<div class="search-container">
+    <input
+        type="text"
+        id="searchBar"
+        placeholder="Search values..."
+        onkeyup="filterValues()"
+    />
+</div>
+             
+<!-- Item 1 -->
+<div class="item">
+    <div class="left-section">
+        <img src="images/thumble.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">THIMBLE</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+               5 Convert Rate = 1-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                ≥ 5 Convert Rate =  ≥ 3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                1.01x Convert Rate = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                1.01x Convert Rate + ≥ 5% Cr = 15-25
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        <!-- Item 2 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/sweatband.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">SWEATBAND</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                21 White Gather Ammount = 0.5-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                22 White Gather Ammount = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                23 White Gather Ammount = 1.5-2.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                24 White Gather Ammount = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                25 White Gather Ammount = 6-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                26 White Gather Ammount = 15-20
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                27 White Gather Ammount = 25-35
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                28 White Gather Ammount = ≥  
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                29 White Gather Ammount = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Item 3 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/bandage.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BANDAGE</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1.01x Bee Attack = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+          <!-- Item 4 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/thumbtack.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">THUMBTACK</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                3 Red Bee Attack (not base) = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                4 Red Bee Attack = 14-17
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                5 Red Bee Attack = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+       <div class="item">
+    <div class="left-section">
+        <img src="images/camo%20bandana.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">CAMO BANDANA</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Super Crit Power = 0.5-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Super Crit Power = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Super Crit Power = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 6 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/kazoo.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">KAZOO</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                ≤ 3 Critical Power = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                4 Critical Power = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                5 Critical Power = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Critical Power + 2 Super Crit Power = 4-5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Critical Power + 3 Super Crit Power = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 7 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/smiley%20sticker.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">SMILEY STICKER</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                + Blue Bomb = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                + Honey Mark + ≤ 9 Md = 26-29
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                + Honey Mark + 10-13 Md = 30-45
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Honey Mark + ≥ 14 Md = ≥ 50
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Honey Mark + 1 Mark Duration {HB} + ≤ 9 Mark Duration = 60-75
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Honey Mark + 1 Mark Duration {HB} + ≥ 10 Mark Duration = ≥ 
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Honey Mark + 2 Mark Duration {HB} = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 8 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/whistle.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">WHISTLE</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                ≤ 2 Super Crit Power = 0.5-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                3 Super Crit Power = 4-5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                4 Super Crit Power = 12-14
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                5 Super Crit Power = 55-60
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                6 Super Crit Power = 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                7 Super Crit Power = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                8 Super Crit Power = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                9 Super Crit Power = ≥ 5x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                10 Super Crit Power = ≥ 6x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                + Melody =
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+               1 Bee Movespeed = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                1.01x Player Movespeed = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 9 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/charm.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">CHARM BRACELET</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+        
+            <li>
+                + Melody + ≤ 4 Ability Rate = 80-95
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Melody + 5 Ability Rate = 85-100
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Melody + 6 Ability Rate = 90-110
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Melody + Honey At Hive =
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Melody + Honey From Token = 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 10 -->
+      <div class="item">
+    <div class="left-section">
+        <img src="images/paperclip.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PAPERCLIP</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Ability Pollen = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Bee Ability Pollen = 15-20
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                3 Bee Ability Pollen = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Token Link = 2.5-3.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                + Token Link + 1 Bee Ability Pollen = 18-23
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Token Link + 2 Bee Ability Pollen = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Token Link + 3 Bee Ability Pollen =  ≥ 2x 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                     <!-- Item 11 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/beret.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BERET</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                + Blue Boost =  ≥
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Blue Field Capacity = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                2 Blue Field Capacity = 3.5-4.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                3 Blue Field Capacity = 35-40
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                4 Blue Field Capacity = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                1 Capacity = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 12 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/bangsnap.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BANG SNAP</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                + Blue Bomb + Blue Bomb+ = 35-40
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                + Buzz Bomb + Buzz Bomb+ = 30-40
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 13 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/bead%20lizard.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BEAD LIZARD</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Ability Pollen = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Bee Ability Pollen = 9-14
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                3 Bee Ability Pollen = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                + Token Link = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                Token Link + 1 Bee Ability Pollen =18-25
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                Token Link + 2 Bee Ability Pollen = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 14 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/pink%20shades.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PINK SHADES</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+            <img src="images/alert%20icon.png" alt="Bullet Image 1">
+                + Focus add values [5-10%]
+            </li>
+            
+            <li>
+                2 Super Crit Power = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               3 Super Crit Power = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Super Crit Power = 4-5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                5 Super Crit Power = 5-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                6 Super Crit Power = 7-9
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               7 Super Crit Power = 11-13
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                8 Super Crit Power = 16-19
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                9 Super Crit Power = 23-27
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                10 Super Crit Power = 35-38
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               11 Super Crit Power = 45-50
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                12 Super Crit Power = 
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">-<img src="images/Snow_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                13 Super Crit Power = 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                14 Super Crit Power = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               15 Super Crit Power = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                2 Super Crit Power + 1 Super Crit Chance = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                3 Super Crit Power + 1 Super Crit Chance = 9-13
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Super Crit Power + 1 Super Crit Chance = 14-17
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               5 Super Crit Power + 1 Super Crit Chance = 27-31
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                6 Super Crit Power + 1 Super Crit Chance =
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">-<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">+<img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                7 Super Crit Power + 1 Super Crit Chance =
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">-<img src="images/Snow_Cub.png" alt="Bullet Image 2">+<img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                8 Super Crit Power + 1 Super Crit Chance =
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">-<img src="images/Bee_Cub.png" alt="Bullet Image 1">+<img src="images/brown-cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               9 Super Crit Power + 1 Super Crit Chance = 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                10 Super Crit Power + 1 Super Crit Chance = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                11 Super Crit Power + 1 Super Crit Chance = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                12 Super Crit Power + 1 Super Crit Chance = ≥ 4x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               13 Super Crit Power + 1 Super Crit Chance = ≥ 5x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                14 Super Crit Power + 1 Super Crit Chance = ≥ 7x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                15 Super Crit Power + 1 Super Crit Chance = ≥ 10x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+             
+               <!-- Item 1 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/lei.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">LEI</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                Blue boost = ≥
+                <img src="images/brown-cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                Red boost = ≥
+                <img src="images/brown-cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        <!-- Item 2 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/rose%20headband.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">ROSE HEADBAND</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                2 Bee Attack = 12-14
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                3 Bee Attack = 17-21
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Item 3 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/pink%20eraseer.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PINK ERASER</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+               Honey From Instant Conversion TBD
+            </li>
+        </ul>
+    </div>
+</div>
+        
+          <!-- Item 4 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/demon.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">DEMON TALISMAN</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                +Inferno TBD
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 5 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/candy%20ring.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">CANDY RING</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                5 Honey At Hive = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6 Honey At Hive = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                7 Honey At Hive = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                8 Honey At Hive = 13-14
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                9 Honey At Hive = 21-24
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                10 Honey At Hive = 
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">-<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">+<img src="images/Doodle_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                11 Honey At Hive = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                12 Honey At Hive = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                3 Honey Per Goo = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                4 Honey Per Goo = 17-21
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                5 Honey Per Goo = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                x1.01 Honey From Tokens = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 6 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/lip%20balm.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">CAMPHOR LIP BALM</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            
+            <li>
+                15 Bubble Pollen = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                16 Bubble Pollen = 1.5-2.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                ≥ 17 Bubble Pollen = 4.5-6.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                18 Bubble Pollen = 10-14
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                19 Bubble Pollen = ≥ 
+                <img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                20 Bubble Pollen = ≥
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                3 Gold Bubble Pollen = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Gold Bubble Pollen = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                5 Gold Bubble Pollen = 5-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                6 Gold Bubble Pollen = 9-12
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                7 Gold Bubble Pollen TBD
+                
+            </li>
+            <li>
+                8 Gold Bubble Pollen TBD
+                
+            </li>
+            <li>
+                9 Gold Bubble Pollen TBD
+                
+            </li>
+            <li>
+                1.06x Pepper Patch Pollen = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                1.07x Pepper Patch Pollen = ≥
+                <img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                1.08x Pepper Patch Pollen = ≥
+                <img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                1 Honey From Instant Convertion = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 7 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/sunhat.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">AUTUMN SUNHAT</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                White Field Capacity TBD
+            </li>
+            <li>
+                White Pollen TBD
+            </li>
+        </ul>
+    </div>
+</div>
+        
+             
+        <h1 class="h1pro">Beesmas Beequips</h1>
+             
+               <!-- Item 9 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/elf%20cap.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">ELF CAP</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                2 Honey At Hive = 0.25-0.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                3 Honey At Hive = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Honey At Hive = 3-3.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                5 Honey At Hive = 7-8
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+               6 Honey At Hive = 30-34
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                7 Honey At Hive = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Doodle_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                8 Honey At Hive = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1-3.9 Convert Rate At Hive = add 10-15% value
+                
+            </li>
+            <li>
+                4-5.9 Convert Rate At Hive = add ≥ x1.50 value
+               
+            </li>
+            <li>
+               ≥ 6 Convert Rate At Hive = Add ≥ x2 value
+                
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 10 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/mitten.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">SINGLE MITTEN</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                4 Red Pollen = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                5 Red Pollen = 2.5-3.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                6 Red Pollen = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                7 Red Pollen = 11-13
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                8 Red Pollen = 21-25
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                9 Red Pollen = ≥
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                     <!-- Item 11 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/scarf.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">WARM SCARF</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Capacity = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 12 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/peppermint%20antennas.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PEPPERMINT ANTENNAS</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+               1 Bee Ability Rate {Hive Bonus} = 1.5-2.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                 3 Ability Rate = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                4 Ability Rate = 6-9
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                5 Ability Rate = ≥ 
+                <img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                 6 Ability Rate = ≥ 
+                <img src="images/Snow_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Bee Ability Rate + 1 Ability Rate = 2.5-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                1 Bee Ability Rate + 2 Ability Rate = 7-9
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                 1 Bee Ability Rate + 3 Ability Rate = 17-21
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Bee Ability Rate + 4 Ability Rate = 45-60
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                1 Bee Ability Rate + 5 Ability Rate = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                 1 Bee Ability Rate + 6 Ability Rate = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">+<img src="images/Snow_Cub.png" alt="Bullet Image 1">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 13 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/beesmastop.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BEESMAS TOP</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+               6 Critical Power = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                7 Critical Power = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+               8 Critical Power = 13-15
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                9 Critical Power = ≥
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 14 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/pinecone.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PINECOME</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                15 Pinetree Capacity = 0.75-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                16 Pinetree Capacity = 1.5-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                17 Pinetree Capacity = 6-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                18 Pinetree Capacity = 16-18
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                19 Pinetree Capacity = 55-60
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                20 Pinetree Capacity = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                21 Pinetree Capacity = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                22 Pinetree Capacity = ≥ 4x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+             
+                      <!-- Item 9 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/ice.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">ICICLES</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Monster Respawn Time = 0.5-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Monster Respawn Time =
+                <img src="images/NoobCub.png" alt="Bullet Image 2">- <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Monster Respawn Time = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6 Blue Bomb Pollen = 1-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                7 Blue Bomb Pollen = 4-5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                ≥ 7.5 Blue Bomb Pollen = ≥
+                <img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 10 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/beesmas%20tree%20hat.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BEESMAS TREE HAT</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                4.5-5 Convert Rate At Hive = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                5.1-5.5 Convert Rate At Hive = 1.5-2
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                5.6-6 Convert Rate At Hive = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                6.1-6.5 Convert Rate At Hive = 3.5-4.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6.6-7 Convert Rate At Hive = 5-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                7.1-7.5 Convert Rate At Hive = 8-10
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                ≥ 7.6 Convert Rate At Hive = ≥
+                <img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                10.000-14.000 Capacity = add 5-10% value
+                
+            </li>
+             <li>
+                15.000-19.000 Capacity = add 15-20% value
+                
+            </li>
+              <li>
+                20.000-24.000 Capacity = add 20-25% value
+                
+            </li>
+             <li>
+                ≥ 25.000 Capacity = ≥ add 30% value
+               
+            </li>
+             
+        </ul>
+    </div>
+</div>
+                     <!-- Item 11 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/bubble%20light.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">BUBBLE LIGHT</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Movespeed = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Bee Movespeed = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 12 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/tiara.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">SNOW TIARA</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+           
+            <li>
+                5-5.4 Blue Field Capacity = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                5.5-6 Blue Field Capacity = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6.1-6.3 Blue Field Capacity = 4-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6.4-6.7 Blue Field Capacity =
+                <img src="images/Doodle_Cub.png" alt="Bullet Image 2">-<img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6.8-7.4 Blue Field Capacity =
+                <img src="images/NoobCub.png" alt="Bullet Image 2">-<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                ≥ 7.5 Blue Field Capacity = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 13 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/snowglobe.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">SNOWGLOBE</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                2 Bomb Pollen TBD
+            </li>
+            <li>
+                 3 Bomb Pollen TBD
+            </li>
+            <li>
+                 4 Bomb Pollen TBD
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 14 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/toy%20horn.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">TOY HORN</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Ability Pollen = 0.5-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                2 Bee Ability Pollen = 6-9
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Bee Ability Pollen = 
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">+<img src="images/NoobCub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                4 Bee Ability Pollen = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                2 Convert rate = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Convert rate = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                4 Convert rate = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+             
+                      <!-- Item 9 -->
+       <div class="item">
+    <div class="left-section">
+        <img src="images/paper%20angel.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">PAPER ANGEL</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Ability Pollen = 0.5-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Bee Ability Pollen = 7-9
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                3 Bee Ability Pollen = 
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">+<img src="images/NoobCub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        
+               <!-- Item 10 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/toy%20drum.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">TOY DRUM</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                1 Bee Ability Pollen = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                2 Bee Ability Pollen = 2-2.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Bee Ability Pollen = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                4 Bee Ability Pollen = 16-18
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                5 Bee Ability Pollen = 
+                <img src="images/brown-cub.png" alt="Bullet Image 2">+<img src="images/Doodle_Cub.png" alt="Bullet Image 2">-<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6 Bee Ability Pollen = 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">-<img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                7 Bee Ability Pollen = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                8 Bee Ability Pollen = ≥ 6x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                     <!-- Item 11 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/lump%20of%20coal.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">LUMP OF COAL</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                <img src="images/alert%20icon.png" alt="Bullet Image 1">
+                Valuable when 3 Blue Bomb Pollen 3 Bomb Pollen and Pollen are all base stats with pot ≥ 4
+                
+            </li>
+            <li>
+                (1-3)
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            
+        </ul>
+    </div>
+</div>
+                    <!-- Item 12 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/poinsettia.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">POINSETTIA</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                4 Red Pollen = 1-1.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                5 Red Pollen = 2-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                6 Red Pollen = 5-6
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+       
+        <li>
+                7 Red Pollen = 9-11
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                8 Red Pollen = 16-17
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                9 Red Pollen = 24-26
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+        <li>
+                10 Red Pollen = 30-35
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                11 Red Pollen = 44-50
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                12 Red Pollen = 
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">+<img src="images/Doodle_Cub.png" alt="Bullet Image 2">-<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+        <li>
+                13 Red Pollen = ≥
+                <img src="images/Snow_Cub.png" alt="Bullet Image 1">+<img src="images/Doodle_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                14 Red Pollen = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+              <li>
+                15 Red Pollen = ≥ 
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">+<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+        <li>
+                16 Red Pollen = ≥ 2x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">
+            </li>
+             </ul>
+    </div>
+</div>
+                    <!-- Item 13 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/puppy%20antlers.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">REINDEER ANTLEERS</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                +Baby Love = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">+<img src="images/Snow_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Capacity = 0.5-1
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                2 Capacity = 1.5-2.5
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                3 Capacity = 5-7
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">+<img src="images/Snow_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                4 Capacity = 16-18
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                5 Capacity = ≥
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">+<img src="images/Gingerbread_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+                6 Capacity = ≥
+                <img src="images/Bee_Cub.png" alt="Bullet Image 1">+<img src="images/Snow_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Bond from Treats =
+                <img src="images/Snow_Cub.png" alt="Bullet Image 2">-<img src="images/Snow_Cub.png" alt="Bullet Image 2">+<img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+                    <!-- Item 14 -->
+        <div class="item">
+    <div class="left-section">
+        <img src="images/festive%20wreath.png" alt="Image Before Item 1" class="left-image">
+        <h3 class="item-description">FESTIVE WREATH</h3>
+    </div>
+    <div class="right-section">
+        <ul class="bullet-points">
+            <li>
+                ≤ 6 Mark Duration = 2.5-3
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                7 Mark Duration = 3-4
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             <li>
+               8 Mark Duration = 5-7
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+                9 Mark Duration = 9-12
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                10 Mark Duration = 15-18
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+             
+            <li>
+                ≥ 11 Mark Duration = ≥ 
+                <img src="images/NoobCub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                1 Ticket Chance = ≥
+                <img src="images/NoobCub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+               1 Honey At Hive = 9-12
+                <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
+            </li>
+            <li>
+               2 Honey At Hive = 
+                <img src="images/Gingerbread_Cub.png" alt="Bullet Image 1">-<img src="images/Gingerbread_Cub.png" alt="Bullet Image 1">+<img src="images/Doodle_Cub.png" alt="Bullet Image 1">
+            </li>
+            <li>
+                3 Honey At Hive = 
+                <img src="images/Peppermint_Robo_Cub.png" alt="Bullet Image 2">-<img src="images/Snow_Cub.png" alt="Bullet Image 2">
+            </li>
+             <li>
+               4 Honey At Hive = ≥ 3x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+            <li>
+               ≥ 5 Honey At Hive = ≥ 4x
+                <img src="images/Bee_Cub.png" alt="Bullet Image 2">
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+<div class="wrapper">
+    <div class="main-content"></div>
+    <footer class="footer">
+        <p>&copy; 2025 The Market BSS. All rights reserved. Developed by richewstew</p>
+    </footer>
+</div>
+    <script src="js/script.js"></script>
+            </main>
+    </div>
+        </body>
+</html>

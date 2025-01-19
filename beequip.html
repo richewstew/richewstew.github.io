@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');   
+     
+        font-family: Arial, sans-serif;
+        }
+
+        .category {
+            margin-bottom: 20px;
+            z-index: 10;
+        }
+
+        /* Glow effect on hover */
+        .sticker-category {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .sticker-category:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6);
+            color: #f0f0f0;
+
+        }
+
+        /* Collapsible list with smooth transition */
+        .category-list {
+            display: none; /* Hide by default */
+            margin-left: 20px;
+            padding-left: 0;
+            list-style-type: none;
+            max-height: 0; /* Start with no visible height */
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .category-list.open {
+            display: block; /* Show when open */
+            max-height: 1000px; /* Allow the list to expand smoothly */
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .list-item img {
+            margin: 0 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .list-item-text {
+            flex-grow: 1;
+        }
+     
+     h1 {
+         color: white;
+         font-family: 'Dela Gothic One', sans-serif;
+        z-index: 12;
+         font-size: 4rem;
+         text-decoration: underline;
+     }
+    </style>
+</head>
+<body>
+     <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="spinner"></div>
+    </div> 
+     <div class="content">
+         
+ <div class="background"></div> <!-- Background image with blur -->
+    <div class="overlay"></div> <!-- Overlay for better readability -->
+    <header class="navbar">
+        <nav class="taskbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="#" class="dropdown-toggle">Values List</a></li>
+                <div class="dropdown-menu">
+                <li><a href="sticker.html">Sticker Value</a></li>
+                <li><a href="waxed.html" class="collapsible">Waxed</a></li>
+                <li><a href="unwaxed.html" class="collapsible">Unwaxed</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+ 
+      
+<div class="main-content">
+    <img src="images/beequip%20banner%202.png" alt="Banner" class="banner-image">
+</div>
+  
+<div class="wrapper">
+    <div class="main-content"></div>
+    <footer class="footer">
+        <p>&copy; 2025 The Market BSS. All rights reserved.</p>
+    </footer>
+</div>
+    <script src="js/script.js"></script>
+    </main>
+    </div>
+</body>
+</html>
