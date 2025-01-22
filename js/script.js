@@ -120,3 +120,37 @@ function setupDropdownToggle() {
     });
 }
 
+function searchItems() {
+    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    const items = document.querySelectorAll('.item'); // All items on the page
+
+    items.forEach(item => {
+        const description = item.querySelector('.item-description').textContent.toLowerCase();
+
+        // If the description contains the search term, show the item, else hide it
+        if (description.includes(searchInput)) {
+            item.style.display = 'flex'; // Show item
+        } else {
+            item.style.display = 'none'; // Hide item
+        }
+    });
+}
+
+// Get the image and overlay elements
+const image = document.getElementById('image');
+const overlay = document.getElementById('overlay');
+
+// When the image is clicked, show the overlay
+image.addEventListener('click', () => {
+    overlay.style.display = 'flex'; // Show the overlay
+});
+
+// When the overlay is clicked, hide the overlay
+overlay.addEventListener('click', () => {
+    overlay.style.display = 'none'; // Hide the overlay
+});
+
+// Prevent the overlay content from closing when clicked (optional)
+document.querySelector('.overlay-content').addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent the overlay from closing when clicking inside the content
+});

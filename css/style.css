@@ -682,3 +682,97 @@ p {
     margin: 25px;
     height: 100vh;
 }
+
+/* Search Container */
+.search-container {
+    position: relative; /* Ensure proper positioning */
+    z-index: 1000; /* Bring the search bar to the front */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure the input is above other elements */
+    position: relative;
+}
+
+/* Responsive adjustments for Search Bar */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 80%; /* Expand the width for smaller screens */
+    }
+}
+
+/* Image styling */
+.image-container {
+    position: relative;
+}
+
+.clickable-image {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Basic styles for the image */
+.left-image {
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+/* Overlay styling */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it is on top of other content */
+    
+}
+
+/* Overlay content styling */
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styling (optional) */
+.overlay-content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.overlay-content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.overlay-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.overlay-content li {
+    margin-bottom: 5px;
+}
+
