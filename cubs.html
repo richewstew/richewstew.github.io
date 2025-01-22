@@ -13,54 +13,88 @@
         
 
         .category {
-            max-width: 800px; /* Set max width to avoid stretching */
-            width: 100%;
-            padding: 20px;
-            margin-top: 20px; /* Add some space at the top */
-            margin-left: auto; /* Center the box horizontally */
-            margin-right: auto; /* Center the box horizontally */
-            z-index: 11;
-        }
+    max-width: 800px; /* Set max width to avoid stretching */
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px; /* Add some space at the top */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    z-index: 11;
+}
 
-        .item {
-            margin-bottom: 40px;
-            text-align: center; /* Center content */
-            display: flex; /* Arrange items horizontally */
-            align-items: center; /* Vertically align items */
-            justify-content: space-between; /* Space out the items */
-            font-size: 1.5em;
-            z-index: 11;
-        }
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .category {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
 
-        .item img {
-            width: 20%; /* Set width of images to be 30% of the container */
-            height: auto;
-            margin: 10px;
-            z-index: 12;
-        }
+.item {
+    margin-bottom: 40px;
+    text-align: center; /* Center content */
+    display: flex; /* Arrange items horizontally */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space out the items */
+    font-size: 1.5em;
+    z-index: 11;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
 
-        .item-description {
-            font-size: 16px;
-            color: white;
-            width: 30%; /* Set width for the description */
-            text-align: left; /* Align the description text to the left */
-            padding: 10px;
-            z-index: 11;
-        }
+/* Responsive adjustments for .item */
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column; /* Stack items vertically */
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
 
-        .item h3 {
-            font-size: 1.5em;
-            color: white;
-            text-align: center;
-            z-index: 11;
-        }
-         
-         h1 {
-             color: white;
-             align-content: center;
-             text-decoration: underline;
-             z-index: 11;
-         }
+.item img {
+    width: 20%; /* Set width of images to be 20% of the container */
+    height: auto;
+    margin: 10px;
+    z-index: 12;
+}
+
+/* Responsive adjustments for images */
+@media (max-width: 768px) {
+    .item img {
+        width: 50%; /* Make images larger on smaller screens */
+        margin: 5px auto; /* Center the images */
+    }
+}
+
+.item-description {
+    font-size: 16px;
+    color: white;
+    width: 30%; /* Set width for the description */
+    text-align: left; /* Align the description text to the left */
+    padding: 10px;
+    z-index: 11;
+}
+
+/* Responsive adjustments for descriptions */
+@media (max-width: 768px) {
+    .item-description {
+        width: 100%; /* Use full width for smaller screens */
+        text-align: center; /* Center the text */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+.item h3 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    z-index: 11;
+}
+
+/* Responsive adjustments for headings */
+@media (max-width: 768px) {
+    .item h3 {
+        font-size: 1.2em; /* Reduce font size for smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -77,9 +111,9 @@
         <nav class="taskbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                 <li><a href="#" class="dropdown-toggle">Values List</a></li>
+                 <li><a href="#" class="dropdown-toggle">Sticker Values</a></li>
                 <div class="dropdown-menu">
-                <li><a href="beequip.html">Beequip Value</a></li>
+                <li><a href="beequip.html">Beequip Values</a></li>
                 <li><a href="hive.html" class="collapsible">Hive</a></li>
                 <li><a href="bee.html" class="collapsible">Bee</a></li>
                 <li><a href="mob.html" class="collapsible">Mob</a></li>
@@ -96,6 +130,7 @@
                 </div>
             </ul>
         </nav>
+        
     </header>
 
     <main>
@@ -125,7 +160,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/Gingerbread_Cub.png" alt="Image Before Item 1">
-            <h3 class="item-description">15-16</h3>
+            <h3 class="item-description">14-15</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
         
@@ -141,7 +176,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/NoobCub.png" alt="Image Before Item 1">
-            <h3 class="item-description">20-22</h3>
+            <h3 class="item-description">19-20</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
         
@@ -149,7 +184,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/Peppermint_Robo_Cub.png" alt="Image Before Item 1">
-            <h3 class="item-description">43-44</h3>
+            <h3 class="item-description">40-42</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
         
@@ -157,7 +192,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/brown-cub.png" alt="Image Before Item 1">
-            <h3 class="item-description">27-29</h3>
+            <h3 class="item-description">26-28</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
         
@@ -165,7 +200,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/Snow_Cub.png" alt="Image Before Item 1">
-            <h3 class="item-description">58-60</h3>
+            <h3 class="item-description">60-64</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
         
@@ -181,7 +216,7 @@
         <div class="item">
             <h3></h3>
             <img src="images/Bee_Cub.png" alt="Image Before Item 1">
-            <h3 class="item-description">100-105</h3>
+            <h3 class="item-description">105-110</h3>
             <img src="images/Cancer%20star%20sign.png" alt="Image After Item 1">
         </div>
                      <!-- Item 11 -->

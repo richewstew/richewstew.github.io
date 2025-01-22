@@ -1,4 +1,30 @@
-  const loadingScreen = document.getElementById('loadingScreen');
+
+document.addEventListener("DOMContentLoaded", () => {
+    const collapsibleLinks = document.querySelectorAll('.collapsible');
+
+    collapsibleLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = e.target.getAttribute('href').substring(1);  // Get target section id
+            const list = document.getElementById(targetId).querySelector('.collapsible-list');
+            
+            // Toggle the visibility of the collapsible list
+            list.style.display = list.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+
+// Add this JavaScript to toggle the dropdown on mobile
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function(e) {
+        const dropdownMenu = this.nextElementSibling;
+        dropdownMenu.classList.toggle('active'); // Toggle the 'active' class
+        e.stopPropagation(); // Prevents the click from propagating to the body
+    });
+});
+
+
+
+const loadingScreen = document.getElementById('loadingScreen');
 
         // Simulate page navigation with a delay
         function simulatePageChange() {
@@ -26,19 +52,8 @@
             hideLoadingScreen();
         });
  
-function filterValues() {
-        const searchInput = document.getElementById("searchBar").value.toLowerCase();
-        const items = document.querySelectorAll(".item");
 
-        items.forEach(item => {
-            const textContent = item.innerText.toLowerCase();
-            if (textContent.includes(searchInput)) {
-                item.style.display = "flex"; // Show matching items
-            } else {
-                item.style.display = "none"; // Hide non-matching items
-            }
-        });
-    }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const collapsibleButtons = document.querySelectorAll('.collapsible-button');
@@ -104,16 +119,4 @@ function setupDropdownToggle() {
         dropdownMenu.classList.toggle('active'); // Toggle the 'active' class
     });
 }
-document.addEventListener("DOMContentLoaded", () => {
-    const collapsibleLinks = document.querySelectorAll('.collapsible');
 
-    collapsibleLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const targetId = e.target.getAttribute('href').substring(1);  // Get target section id
-            const list = document.getElementById(targetId).querySelector('.collapsible-list');
-            
-            // Toggle the visibility of the collapsible list
-            list.style.display = list.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-});

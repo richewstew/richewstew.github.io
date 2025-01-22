@@ -6,16 +6,16 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
      <style>
-         /* Body and container styling */
- .search-container {
-     position: relative; /* Ensure proper positioning */
+ /* Search Container */
+.search-container {
+    position: relative; /* Ensure proper positioning */
     z-index: 1000; /* Bring the search bar to the front */
     text-align: center;
     margin-bottom: 20px;
 }
 
 #searchBar {
-       width: 50%;
+    width: 50%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -23,39 +23,47 @@
     z-index: 1000; /* Ensure the input is above other elements */
     position: relative;
 }
-         
-         body, html {
-            color: white; /* Set text color to white for all content */
-        }
-        
- 
-        .category {
-            max-width: 800px; /* Set max width to avoid stretching */
-            width: 100%;
-            padding: 20px;
-            margin-top: 20px; /* Add some space at the top */
-            margin-left: auto; /* Center the box horizontally */
-            margin-right: auto; /* Center the box horizontally */
-            z-index: 11;
-        }
-         
-         .h1pro {
-             color: white;
-             z-index: 12;
-             text-decoration: underline;
-             text-decoration-color: white;
-             
-         }         
-         
-         
-         
-         
+
+/* Responsive adjustments for Search Bar */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 80%; /* Expand the width for smaller screens */
+    }
+}
+
+/* General Styling */
+body, html {
+    color: white; /* Set text color to white for all content */
+}
+
+/* Category Styling */
+.category {
+    max-width: 800px; /* Set max width to avoid stretching */
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px; /* Add some space at the top */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    z-index: 11;
+}
+
+/* Headline Styling */
+.h1pro {
+    color: white;
+    z-index: 12;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* Item Layout */
 .item {
     display: flex;
     align-items: center; /* Vertically align the left and right sections */
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
+/* Left Section Styling */
 .left-section {
     display: flex;
     flex-direction: column;
@@ -71,6 +79,19 @@
     z-index: 11;
 }
 
+/* Responsive adjustments for Left Section */
+@media (max-width: 768px) {
+    .left-section {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .left-image {
+        width: 200px; /* Reduce image size for smaller screens */
+    }
+}
+
+/* Item Description Styling */
 .item-description {
     font-size: 20px; /* Larger font for better visibility */
     font-weight: bold;
@@ -78,12 +99,14 @@
     color: #fff; /* White text for contrast */
 }
 
+/* Right Section Styling */
 .right-section {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Align bullet points vertically */
 }
 
+/* Bullet Points Styling */
 .bullet-points {
     list-style-type: none; /* Remove default bullet points */
     padding: 0;
@@ -94,20 +117,29 @@
 .bullet-points li {
     display: flex;
     align-items: center;
-    margin: 5pxpx 0; /* Add spacing between bullet points */
+    margin: 10px 0; /* Add spacing between bullet points */
     font-size: 25px;
     color: #fff; /* White text for visibility */
 }
 
+/* Bullet Point Image Styling */
 .bullet-points li img {
     width: 60px; /* Match the size of the bullet point images */
     height: auto;
     margin-left: 10px; /* Add spacing between text and image */
 }
-         
-        
-         
-         
+
+/* Responsive adjustments for Bullet Points */
+@media (max-width: 768px) {
+    .bullet-points li {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .bullet-points li img {
+        width: 40px; /* Reduce image size for smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -124,7 +156,7 @@
         <nav class="taskbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                 <li><a href="#" class="dropdown-toggle">Values List</a></li>
+                 <li><a href="#" class="dropdown-toggle">Beequip Values</a></li>
                 <div class="dropdown-menu">
                 <li><a href="sticker.html">Sticker Value</a></li>
                 <li><a href="waxed.html" class="collapsible">Waxed</a></li>
@@ -486,11 +518,11 @@
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
             </li>
             <li>
-                4 Pot = 5.00-6.00
+                4 Pot = 3.50-4.50
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
             </li>
             <li>
-                5 Pot = 7.50-11.50
+                5 Pot = 5.00-7.00
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
             </li>
         </ul>
@@ -506,15 +538,15 @@
     <div class="right-section">
         <ul class="bullet-points">
             <li>
-                ≤ 3 Pot = 0.50-0.60
+                3 Pot = 0.40-0.50
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 1">
             </li>
             <li>
-                4 Pot = 1.00-1.50
+                4 Pot = 0.75-1.00
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
             </li>
              <li>
-                5 Pot = 1.75-2.25
+                5 Pot = 1.00-1.50
                 <img src="images/Cancer%20star%20sign.png" alt="Bullet Image 2">
             </li>
         </ul>
