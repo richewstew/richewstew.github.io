@@ -226,12 +226,14 @@ header {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .taskbar {
-       
+       display: none;
         flex-direction: column;
         height: auto;
         padding: 10px 0;
         overflow-y: auto;
         font-size: 30px;
+        border: none;
+        background-color: transparent;
     }
 
     .taskbar ul {
@@ -246,7 +248,7 @@ header {
 
     /* Push content below taskbar */
     .content {
-        margin-top: 80px; /* Adjust to taskbar height */
+        margin-top: 35px; /* Adjust to taskbar height */
     }
     
     .hamburger {
@@ -262,7 +264,7 @@ header {
 
     /* Push content below taskbar */
     .content {
-        margin-top: 70px; /* Adjust to taskbar height */
+        margin-top: 90px; /* Adjust to taskbar height */
     }
 }
 
@@ -325,7 +327,7 @@ main {
 
 @media (max-width: 768px) {
     main {
-        margin-top: 175px;
+        margin-top: 40px;
         
         
     }
@@ -384,42 +386,71 @@ p {
     overflow: visible; /* Show all content when expanded */
 }
 
-/* Responsive Styles - Mobile (max-width: 768px) */
-@media (max-width: 768px) {
 
-    /* Change dropdown layout to vertical on small screens */
-    .dropdown-menu {
-        flex-direction: column; /* Stack items vertically */
-         overflow: hidden; /* Hide content when collapsed */
-        margin: 15px; /* Remove margin between items */
-        max-width: 0; /* Remove max-width to allow full expansion */
-        max-height: 50px;
-        font-size: 30px;
-        
-    }
 
-    /* Spacing between dropdown items in vertical layout */
-    .dropdown-menu a {
-        margin-bottom: 10px; /* Add space between items */
-        margin-right: 0; /* Remove right margin */
-        width: 100%; /* Make each item take full width */
-        text-align: center; /* Center text */
-        font-size: 30px;
-    }
-
-    /* Show dropdown when active */
-    .dropdown-menu.active {
-        display: block;
-        max-width: none;
-         overflow: visible; /* Show all content when expanded */
-    }
+/* Mobile Taskbar */
+.taskbar.mobile {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Dela Gothic One', sans-serif;
 }
 
-/* For Very Small Screens (max-width: 480px) */
-@media (max-width: 480px) {
-    .dropdown-menu a {
-        font-size: 12px; /* Adjust font size for smaller screens */
-        padding: 10px 15px; /* Adjust padding for smaller screens */
+.taskbar.mobile button {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: lightgray;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.taskbar.mobile button:hover {
+     background-color: #444; /* Hover background */
+    color: #00bcd4; /* Hover text color */
+}
+
+
+/* Pages */
+.values-page,
+.about-page {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.values-page button,
+.about-page button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.values-page button:hover,
+.about-page button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .taskbar.desktop {
+        display: none;
+    }
+    .taskbar.mobile {
+        display: flex;
     }
 }
 
@@ -525,6 +556,8 @@ p {
     .server-info {
         gap: 5px; /* Reduce spacing for smaller screens */
     }
+
+
 }
 
 /* Server Logo */
@@ -668,19 +701,23 @@ p {
     background-color: #555;
 }
 
+@media (max-width: 768px) {
 .pic {
-   position: absolute;
-    top: 45px;
+    top 50px;
     left: 0; /* Offset to account for the taskbar width */
     right: 0;
     bottom: 0;
-    display: flex;
+    display: block;
     justify-content: center; /* Center horizontally */
     align-items: flex-start; /* Align items towards the top */
     padding: 20px;
     overflow: hidden; /* Prevent overflow issues */
     margin: 25px;
-    height: 100vh;
+    height: auto;
+    z-index: 10001;
+    
+    
+}
 }
 
 /* Search Container */
@@ -776,3 +813,83 @@ p {
     margin-bottom: 5px;
 }
 
+.taskbar mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+/* Taskbar Styles */
+.taskbar {
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.taskbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.taskbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+/* Dropdown Toggle Button */
+.dropdown-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown-mobile {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    width: 50%; /* Take up 50% of the screen width */
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown-mobile li {
+    margin: 0;
+}
+
+.dropdown-mobile a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-mobile a:hover {
+    background-color: #555;
+}
+
+/* Show Dropdown */
+.dropdown-mobile.show {
+    display: flex; /* Show dropdown menu */
+}
+
+}

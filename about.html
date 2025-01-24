@@ -8,6 +8,45 @@
     <style>
        
     
+/* Donation Button Container */
+.donation-container {
+    text-align: center;
+}
+
+/* PayPal Button */
+.paypal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #005EA6, #003087);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paypal-button:hover {
+    background: linear-gradient(90deg, #003087, #001F5C);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.paypal-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PayPal Logo */
+.paypal-logo {
+    height: 24px;
+    width: 24px;
+}
         .category {
             max-width: 40%px; /* Set max width to avoid stretching */
             width: 40%;
@@ -37,6 +76,9 @@
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
+              <nav class="taskbar mobile">
+            <button onclick="location.href='index.html'">Home</button>
+        </nav>
     </header>
     <main>
     <section class="hero">
@@ -44,7 +86,8 @@
         
     </section>
 <h1 class="category">Kyle Sippel is the proud owner of this website, dedicated to providing valuable content and services to its visitors. For inquiries, collaborations, or more information, you can reach Kyle directly at richewstew@gmail.com. Cookies are not being collected, and no user data is being recorded.</h1>
-
+        
+        
 
 <div class="wrapper">
     <div class="main-content"></div>
